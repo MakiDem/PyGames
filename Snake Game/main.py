@@ -184,7 +184,7 @@ while True:
     else:
         Bg_Music.set_volume(0.15)
 
-        if not tracker:
+        if not tracker:#start screen
             title_font = pygame.font.Font('font/Tiny5-Regular.ttf', 150)
             title_text = title_font.render('Snake Pixel', False, '#1B4332')
             title_rect = title_text.get_rect(midbottom=(GAME_WIDTH/2, GAME_HEIGHT/3))
@@ -200,7 +200,7 @@ while True:
             screen.blit(instruction_text, instruction_rect)
 
             start_game()#check input for start
-        else: #game-over
+        else: #game-over screen
             title_font = pygame.font.Font('font/Tiny5-Regular.ttf', 150)
             title_text = title_font.render('Game Over', False, '#990F02')
             title_rect = title_text.get_rect(midbottom=(GAME_WIDTH / 2, GAME_HEIGHT / 3))
